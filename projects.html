@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Yeowon Yoon</title>
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <style>
+    /* Project previews */
+    .preview {
+      margin: 1.5rem 0;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    }
+
+    .preview-img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.4s ease, filter 0.4s ease;
+      cursor: pointer;
+    }
+
+    .preview-img:hover {
+      transform: scale(1.02);
+      filter: brightness(1.05);
+    }
+  </style>
+</head>
+<body>
+<header class="site-header">
+  <div class="nav-wrap container">
+    <a href="index.html" class="brand">Yeowon Yoon</a>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="research.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <h1>Projects</h1>
+
+  <!-- COSMOS Submarine -->
+  <section id="submarine" class="card">
+    <h2>COSMOS Submarine Project — Engineering & Design (Team of 2)</h2>
+    <p>
+      UC Davis COSMOS Cluster 5 project. Designed and programmed an underwater EV3 submarine robot;
+      demonstrated buoyancy control, maneuvering, and sensor integration.
+    </p>
+    <div class="stack">
+      <video class="video" controls>
+        <source src="contents/COSMOS_Submarine_Robot_Video.mp4" type="video/mp4" />
+      </video>
+      <object data="contents/COSMOS_Submarine_Slides.pdf" type="application/pdf" class="pdf-preview"></object>
+      <video class="video" controls>
+        <source src="contents/Submarine_Presentation.mp4" type="video/mp4" />
+      </video>
+    </div>
+  </section>
+
+  <!-- APCSA Game -->
+  <section id="apcsa-game" class="card">
+    <h2>APCSA Class Game Project — 2nd Lead Developer (Team of 4)</h2>
+    <p>
+      Functional arcade-style game built for AP CS. Led core gameplay logic and visuals,
+      packaged deliverables, and led demo presentation.
+    </p>
+    <div class="stack">
+      <object data="contents/APCS_Game_Presentation.pdf" type="application/pdf" class="pdf-preview"></object>
+      <a class="btn" href="contents/APCS_Game.zip" download>Download Game (ZIP)</a>
+      <video class="video" controls>
+        <source src="contents/APCS_GamePlay.mp4" type="video/mp4" />
+      </video>
+    </div>
+  </section>
+
+  <!-- Web Dev Club -->
+  <section id="webdev" class="card">
+    <h2>Web Dev Club — Full-Stack Club Directory</h2>
+    <p>
+      Founder & President. Built a searchable full-stack directory to centralize information
+      for 100+ student clubs with tag filters and club submission features.
+    </p>
+
+    <!-- Website preview -->
+    <div class="preview">
+      <a href="https://troywebdev.com" target="_blank" rel="noopener">
+        <img
+          src="visuals/webdev_preview.png"
+          alt="Troy Web Dev Club Directory Preview"
+          class="preview-img"
+        />
+      </a>
+    </div>
+
+    <a class="btn ghost" href="https://troywebdev.com" target="_blank" rel="noopener">
+      Visit troywebdev.com →
+    </a>
+  </section>
+
+  <!-- IBCS App -->
+  <section id="ibcs" class="card">
+    <h2>IBCS App Project — In Development (Team of 4)</h2>
+    <p>
+      Education-focused mobile app prototype designed for interactive learning and course planning.
+      Collaborated on UI/UX iteration and core logic in MIT App Inventor.
+    </p>
+
+    <!-- App preview -->
+    <div class="preview compact">
+    <a href="contents/IBCS_App.aia" download>
+        <img
+        src="visuals/ibcs_preview.png"
+        alt="IBCS App Project Preview"
+        class="preview-img"
+        />
+    </a>
+    </div>
+
+    <a class="btn" href="contents/IBCS_App.aia" download>
+      Download .aia (App Inventor)
+    </a>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">© <span id="year"></span> Yeowon Yoon</div>
+</footer>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

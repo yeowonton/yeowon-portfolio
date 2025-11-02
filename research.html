@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Research — Yeowon Yoon</title>
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  
+  <style>
+    /* Concordia preview section */
+    .preview {
+      margin: 1.5rem 0;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    }
+
+    .preview-img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.4s ease, filter 0.4s ease;
+      cursor: pointer;
+    }
+
+    .preview-img:hover {
+      transform: scale(1.02);
+      filter: brightness(1.05);
+    }
+  </style>
+</head>
+<body>
+<header class="site-header">
+  <div class="nav-wrap container">
+    <a href="index.html" class="brand">Yeowon Yoon</a>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="research.html" class="active">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <h1>Research</h1>
+
+  <!-- MIT URTC -->
+  <section id="urtc" class="card">
+    <h2>MIT URTC / NeuroPlay — Co-First Author (Team of 3)</h2>
+    <p>
+      Conducted at MIT Lincoln Laboratory – Beaver Works Summer Institute (BWSI)
+      Medyletics. Parkinson’s detection and severity staging using voice biomarkers;
+      implemented Random Forest and FNN; integrated into NeuroPlay, a game-based
+      diagnostic app. Expanded into a peer-reviewed paper at IEEE URTC 2025.
+    </p>
+    <p class="note">
+      © 2025 IEEE. This is the author’s version accepted for the IEEE MIT URTC 2025.
+      Final version available via IEEE Xplore.
+    </p>
+    <div class="stack">
+      <a class="btn" href="contents/MIT_URTC_Paper.pdf" download>Download Full Paper (PDF)</a>
+      <object data="contents/MIT_URTC_Paper.pdf" type="application/pdf" class="pdf-preview"></object>
+      <a class="btn" href="contents/VoiceNotebookPrint.pdf" download>Download Notebook (PDF)</a>
+      <object data="contents/VoiceNotebookPrint.pdf" type="application/pdf" class="pdf-preview"></object>
+      <a class="btn ghost" href="contents/Voice_v3.ipynb" download>Download Voice_v3.ipynb (Archived)</a>
+      <video class="video" controls>
+        <source src="contents/NeuroPlay.mp4" type="video/mp4" />
+      </video>
+    </div>
+  </section>
+
+  <!-- COSMOS BP -->
+  <section id="bp" class="card">
+    <h2>COSMOS BP Research — E. coli Chemotaxis (Main Coder, Team of 2)</h2>
+    <p>
+      UC Davis COSMOS Cluster 5 biophysics project simulating E. coli run-and-tumble
+      motion across a Gaussian chemoattractant gradient. Stochastic modeling with
+      random walks; visualization of biased trajectories and diffusion dynamics.
+    </p>
+    <div class="stack">
+      <a class="btn" href="contents/BPResearchPaper.pdf" download>Download Full Paper (PDF)</a>
+      <object data="contents/BPResearchPaper.pdf" type="application/pdf" class="pdf-preview"></object>
+      <a class="btn ghost" href="contents/BPResearchNotebookPrint.pdf" download>Download Notebook (PDF)</a>
+      <object data="contents/BPResearchNotebookPrint.pdf" type="application/pdf" class="pdf-preview"></object>
+    </div>
+  </section>
+
+  <!-- OCSEF / Matematika -->
+  <section id="ocsef" class="card">
+    <h2>OCSEF / Matematika — Team of 3 (President/Founder & Project Lead)</h2>
+    <p>
+      Orange County Science & Engineering Fair project and extended paper. Includes
+      lab notes, slides, and a presentation video. The finalized version was expanded
+      into a manuscript submitted to the <em>Journal of Emerging Investigators (JEI)</em>.
+    </p>
+    <div class="stack">
+      <a class="btn" href="contents/JEI_Drone_Model_Paper.pdf" download>
+        Download Final Manuscript (PDF)
+      </a>
+      <object data="contents/JEI_Drone_Model_Paper.pdf"
+              type="application/pdf"
+              class="pdf-preview"></object>
+
+      <object data="contents/OCSEF_LabNote.pdf"
+              type="application/pdf"
+              class="pdf-preview"></object>
+      <object data="contents/OCSEF_Slides.pdf"
+              type="application/pdf"
+              class="pdf-preview"></object>
+
+      <a class="btn"
+         href="https://www.youtube.com/watch?v=JfWySG13a2s"
+         target="_blank"
+         rel="noopener">
+         Watch Presentation (YouTube)
+      </a>
+    </div>
+  </section>
+
+  <!-- Concordia -->
+  <section id="concordia" class="card">
+    <h2>Concordia ML — Individual</h2>
+    <p>
+      NetFlow-based intrusion detection (UNSW-NB15) with feature engineering and optimized
+      Random Forest model achieving <strong>91% recall</strong> and <strong>99% accuracy</strong>.
+      Developed during the Troy Tech internship and integrated into mentor’s course materials.
+    </p>
+
+    <!-- Website preview -->
+    <div class="preview">
+      <!-- Make sure this image exists at /visuals/concordia_preview.png -->
+      <a href="/concordia/index.html" target="_blank" rel="noopener">
+        <img
+          src="visuals/concordia_preview.png"
+          alt="Concordia ML Showcase preview"
+          class="preview-img"
+        />
+      </a>
+    </div>
+
+    <div class="stack">
+      <a class="btn" href="contents/Concordia_ML_Notebook.ipynb" download>
+        Download Jupyter Notebook (.ipynb)
+      </a>
+      <a class="btn ghost" href="/concordia/index.html" target="_blank" rel="noopener">
+        View Interactive Showcase →
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">© <span id="year"></span> Yeowon Yoon</div>
+</footer>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
