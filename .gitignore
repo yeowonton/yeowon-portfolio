@@ -1,0 +1,13 @@
+# Ignore heavy files and build folders
+node_modules/
+*.mp4
+*.mov
+*.zip
+*.aia
+*.ipynb
+*.dotx
+*.DS_Store
+.venv/
+next/
+ml-showcase@1.0.0/
+concordia/
