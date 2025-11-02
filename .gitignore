@@ -1,0 +1,17 @@
+# Node / Build folders
+node_modules/
+.next/
+out/
+dist/
+.cache/
+temp/
+tmp/
+*.log
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Large / Raw sources
+Concordia_Website_file/
+contents/*_compressed.mp4
